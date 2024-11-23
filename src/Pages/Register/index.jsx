@@ -17,7 +17,7 @@ const Register = () => {
     e.preventDefault();
     try {
       const res = await fetch(
-        "http://13.126.41.1:3001/api/v1/user/register",
+        "http://13.126.142.251:3001/api/v1/user/register",
         {
           method: "POST",
           body: JSON.stringify(data),
