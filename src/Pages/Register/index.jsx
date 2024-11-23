@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import "./style.css";
 const Register = () => {
-  const navigate = useNavigate();
   const [data, setData] = useState({
     firstName: "",
     lastName: "",
@@ -33,7 +31,6 @@ const Register = () => {
     } catch (error) {
       console.log(error);
     }
-    //navigate("/login");
   };
   return (
     <>
